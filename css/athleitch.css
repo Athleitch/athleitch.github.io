@@ -1,0 +1,15 @@
+.social-link {
+    font-size: 1.4rem;
+    display: block;
+}
+
+
+
+.intro{
+    font-size: 2.2rem;
+    text-align: center;
+    max-width: 500px;
+    font-family: 'Goldman', cursive;
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
