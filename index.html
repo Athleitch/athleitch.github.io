@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <a class="navbar-brand" href="#">Athleitch</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@
                 <img class="align-self-end " src="media/athleitch.png">
             </div>
         </div>
-       
+
     </section>
 
     <section id="juegos" class="container">
@@ -97,6 +97,7 @@
 
     <section id="redes" class="container">
         <h2>Mis redes sociales</h2>
+        <div id="twitch-embed"></div>
         <a href="https://www.twitch.tv/athleitch" target="_blank" class="social-link"><i class="fab fa-twitch"></i>
             Athleitch</a>
         <a href="https://twitter.com/athleitch" target="_blank" class="social-link"><i class="fab fa-twitter"></i>
@@ -123,16 +124,24 @@
     <script src="vendors/vanta/vanta.fog.min.js"></script>
     <script>
         VANTA.FOG({
-          el: "#acerca",
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          highlightColor: 0xf535e8,
-          midtoneColor: 0xde4d39
+            el: "#acerca",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0xf535e8,
+            midtoneColor: 0xde4d39
         })
-        </script>
+    </script>
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    <script type="text/javascript">
+        new Twitch.Embed("twitch-embed", {
+            width: 854,
+            height: 480,
+            channel: "athleitch",
+        });
+    </script>
 </body>
 
 </html>
